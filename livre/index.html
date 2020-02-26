@@ -89,7 +89,7 @@ function display_chapter(hash,n) {
     var req = new XMLHttpRequest()
 
       // url de l'étape à récupérer
-      , url = 'chapitre'+n+'.json'
+      , url = '/livre/chapitre'+n+'.json'
     ;
     req.open("GET", url);
     req.onerror = () => console.log("Failed to load "+url);
